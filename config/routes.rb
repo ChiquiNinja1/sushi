@@ -1,8 +1,0 @@
-Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-
-  get '/home/index', to: 'home#index' as: 'index'
-  get '/about', to: 'home#chi_siamo' as: 'about'
-
-  root 'home#index'
-end
