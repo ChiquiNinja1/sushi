@@ -11,33 +11,37 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome %>
-  </div>
-
-  <div class="field">
-    <%= form.label :telefono %>
-    <%= form.text_field :telefono %>
-  </div>
-
-  <div class="field">
-    <%= form.label :indirizzo %>
-    <%= form.text_field :indirizzo %>
-  </div>
-
-
+  <div class="container"> 
+      <div class="field">
+      <%= form.label :nome, class:"form-label" %>
+      <%= form.text_field :nome, class:"form-control" %>
+    </div>
+<br>
     <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
+      <%= form.label :telefono, class:"form-label" %>
+      <%= form.text_field :telefono, class:"form-control" %>
+    </div>
+<br>
     <div class="field">
-    <%= form.label 'Prodotto' %>
-    <%= form.file_field :cover %>
+      <%= form.label :indirizzo, class:"form-label" %>
+      <%= form.text_field :indirizzo, class:"form-control" %>
+    </div>
+
+<br>
+      <div class="field">
+      <%= form.label :email, class:"form-label" %>
+      <%= form.text_field :email, class:"form-control" %>
+    </div>
+<br>
+      <div class="field">
+      <%= form.label 'Prodotto', class:"form-label" %>
+      <%= form.file_field :cover, class:"form-control" %>
+    </div>
+<br>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  
 <% end %>
