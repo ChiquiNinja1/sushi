@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="container">
+<h1>Menu</h1>
+
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Telefono</th>
+      <th>Indirizzo</th>
+      <th>email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @menus.each do |menu| %>
+      <tr>
+        <td>
+          <%if menu.cover.attached? %>
+              <%= image_tag url_for(menu.cover), class: "w-50" %>
+          <%end%>
+        </td>
+        <td><%= menu.nome %></td>
+        <td><%= menu.telefono %></td>
+        <td><%= menu.indirizzo %></td>
+        <td><%= link_to 'Show', menu %></td>
+        <td><%= link_to 'Edit', edit_menu_path(menu) %></td>
+        <td><%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Menu', new_menu_path %>
+</div>
+
+

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @menu.nome %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @menu.telefono %>
+</p>
+
+<p>
+  <strong>Indirizzo:</strong>
+  <%= @menu.indirizzo %>
+</p>
+
+<p>
+  <%if @menu.cover.attached? %>
+    <%= image_tag url_for(@menu.cover) %>
+  <%end%>
+</p>
+
+<%= link_to 'Edit', edit_menu_path(@menu) %> |
+<%= link_to 'Back', menus_path %>

@@ -1,0 +1,9 @@
+<h1>Editing Menu</h1>
+<br>
+
+<div class="container">
+    <%= render 'form', menu: @menu %>
+    <br>
+    <%= link_to 'Show', @menu, class:'btn btn-success' %> |
+    <%= link_to 'Back', menus_path, class:'btn btn-secondary' %>
+</div>
