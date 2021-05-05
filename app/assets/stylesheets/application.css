@@ -18,13 +18,13 @@
 
 
  body{
-    background-color: #f0ede6;
+    background-color: #ff0000c0;
 
   
 }
 
 h1{
-    color: blue;
+    color: rgb(255, 187, 0);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     padding: 10px;

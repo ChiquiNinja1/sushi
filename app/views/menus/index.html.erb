@@ -11,7 +11,8 @@
         <th>Telefono</th>
         <th>Indirizzo</th>
         <th>email</th>
-        <th colspan="4"></th>
+        <th>Quantità</th>
+        <th colspan="5"></th>
       </tr>
     </thead>
 
@@ -27,6 +28,7 @@
           <td><%= menu.telefono %></td>
           <td><%= menu.indirizzo %></td>
           <td><%=menu.email %><td>
+          <td><%=menu.numero %><td>
           <td><%= link_to 'Visualizza', menu, class:'btn btn-info' %></td>
           <td><%= link_to 'Edita', edit_menu_path(menu), class:'btn btn-light' %></td>
           <td><%= link_to 'Elimina', menu, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger ' %></td>
@@ -37,7 +39,7 @@
 
   <br>
 
-  <%= link_to 'New Menu', new_menu_path, class:'btn btn-success' %>
+  <%= link_to 'Ordina', new_menu_path, class:'btn btn-success' %>
 </div>
 
 
